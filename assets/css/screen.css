@@ -421,8 +421,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt p:after {
-  content: "\00a0…";
-  opacity: .5;
+    content: "\00a0…";
+    opacity: .5;
 }
 
 .post-card-meta {
@@ -1969,4 +1969,36 @@ a.assets-link:hover {
 .table-cell {
     display: table-cell;
     vertical-align: middle;
+}
+
+/* Homepage */
+.post-card-image-link[href$="webvr-api-transitions-to-w3c-standard/"] .post-card-image {
+    background-color: #fff;
+    background-size: 200px auto;
+}
+/* Post page: https://blog.mozvr.com/webvr-api-transitions-to-w3c-standard/ */
+.post-card-image-link[href$="webvr-api-transitions-to-w3c-standard/"] .post-full-image {
+    background-color: #fff;
+    height: 18rem;
+    object-fit: contain;
+}
+
+/* Homepage */
+.post-card-image-link[href$="firefox-reality-bringing-the-immersive-web-to-mixed-reality-headsets/"] .post-card-image {
+    background-color: #b8cfff;  /* Colour lightened from background colour used in masthead here: https://blog.mozilla.org/blog/2018/04/03/mozilla-brings-firefox-augmented-virtual-reality/ */
+    background-size: 90% auto;
+}
+/* Post page: https://blog.mozvr.com/firefox-reality-bringing-the-immersive-web-to-mixed-reality-headsets/ */
+.post-card-image-link[href$="firefox-reality-bringing-the-immersive-web-to-mixed-reality-headsets/"] .post-full-image {
+    height: 14rem;
+    object-fit: contain;
+}
+
+.post-full-content img,
+.post-full-content video {
+    max-width: 840px;
+}
+
+.post-full-content h2 {
+    margin-bottom: .75rem;
 }
